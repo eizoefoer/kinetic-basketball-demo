@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Perfect your three-point shot with Kinetic Basketball - biomechanics-based shooting system used by elite players. Learn the Clarence Method for effortless, accurate shooting without injury.">
+    <title>Kinetic Basketball - Shoot Like Clarence | Elite 3-Point System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        court: {
+                            50: '#fef9f3',
+                            100: '#fdf0e3',
+                            200: '#fae0c8',
+                            300: '#f5c99e',
+                            400: '#edab72',
+                            500: '#e38d4d',
+                            600: '#d66f33',
+                            700: '#b85227',
+                            800: '#944123',
+                            900: '#77361f',
+                            950: '#3f1a0f',
+                        },
+                        kinetic: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Space Grotesk', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-display { font-family: 'Space Grotesk', sans-serif; }
+        .font-body { font-family: 'Inter', sans-serif; }
+        .hero-gradient { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); }
+        .court-pattern { background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.08) 1px, transparent 0); background-size: 20px 20px; }
+        .btn-primary { background: linear-gradient(135deg, #e38d4d 0%, #d66f33 100%); }
+        .btn-primary:hover { background: linear-gradient(135deg, #d66f33 0%, #b85227 100%); }
+        .text-gradient { background: linear-gradient(135deg, #e38d4d 0%, #f5c99e 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .feature-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .feature-card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px -10px rgba(227, 141, 77, 0.2); }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        .animate-float { animation: float 3s ease-in-out infinite; }
+        @keyframes pulse-glow { 0%, 100% { box-shadow: 0 0 20px rgba(227, 141, 77, 0.3); } 50% { box-shadow: 0 0 40px rgba(227, 141, 77, 0.6); } }
+        .animate-pulse-glow { animation: pulse-glow 2s ease-in-out infinite; }
+    </style>
+</head>
+<body class="font-body bg-court-50 text-gray-900 antialiased">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-court-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="#" class="font-display font-bold text-xl text-court-900 flex items-center gap-2">
+                    <svg class="w-8 h-8 text-court-500" viewBox="0 0 32 32" fill="none">
+                        <circle cx="16" cy="16" r="15" stroke="currentColor" stroke-width="2"/>
+                        <path d="M16 2 L16 30" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M2 16 L30 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <ellipse cx="16" cy="16" rx="8" ry="5" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                    <span>Kinetic Basketball</span>
+                </a>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#method" class="text-gray-600 hover:text-court-600 font-medium transition-colors">The Method</a>
+                    <a href="#what-you-get" class="text-gray-600 hover:text-court-600 font-medium transition-colors">What You Get</a>
+                    <a href="#proof" class="text-gray-600 hover:text-court-600 font-medium transition-colors">Proof</a>
+                    <a href="#faq" class="text-gray-600 hover:text-court-600 font-medium transition-colors">FAQ</a>
+                </div>
+                <a href="#order" class="btn-primary text-white px-6 py-2.5 rounded-lg font-semibold text-sm transition-all duration-200 hover:scale-105 animate-pulse-glow">
+                    Get Instant Access
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient court-pattern relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 mb-6 animate-float">
+                        <span class="relative flex h-2 w-2">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-kinetic-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-kinetic-400"></span>
+                        </span>
+                        <span class="text-sm font-medium text-white">New: The Clarence Method™ Digital System</span>
+                    </div>
+                    <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+                        Shoot <span class="text-gradient">Three-Pointers</span> Like Clarence
+                    </h1>
+                    <p class="text-xl sm:text-2xl text-court-100 mb-8 max-w-xl mx-auto lg:mx-0">
+                        The biomechanics-based shooting system that teaches you <strong>effortless power</strong>, <strong>perfect arc</strong>, and <strong>injury-proof form</strong> — used by elite players at Big Lesher.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-10">
+                        <a href="#order" class="btn-primary text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-200 hover:scale-105 shadow-lg shadow-court-500/30 animate-pulse-glow w-full sm:w-auto">
+                            <span class="flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/></svg>
+                                Get the Complete System — $47
+                            </span>
+                        </a>
+                        <a href="#method" class="bg-white/10 border border-white/20 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200 hover:bg-white/20 w-full sm:w-auto">
+                            See How It Works
+                        </a>
+                    </div>
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-6 text-court-200 text-sm">
+                        <div class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-kinetic-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                            <span>Instant PDF + Video Access</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-kinetic-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                            <span>60-Day Money-Back Guarantee</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-kinetic-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                            <span>Lifetime Updates</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="relative animate-float">
+                        <div class="aspect-square max-w-md mx-auto relative">
+                            <img src="https://images.unsplash.com/photo-1546519638-68e109798585?w=600&h=600&fit=crop" alt="Clarence demonstrating perfect shooting form" class="w-full h-full object-cover rounded-2xl shadow-2xl border-4 border-court-500/30">
+                            <div class="absolute -bottom-6 -right-6 bg-white rounded-2xl p-4 shadow-2xl border border-court-200">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-12 h-12 bg-court-100 rounded-xl flex items-center justify-center">
+                                        <svg class="w-6 h-6 text-court-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                    </div>
+                                    <div>
+                                        <p class="font-bold text-gray-900">47% → 89%</p>
+                                        <p class="text-sm text-gray-500">3PT % improvement in 8 weeks</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="absolute -top-6 -left-6 bg-kinetic-500 rounded-2xl p-4 shadow-2xl animate-pulse-glow">
+                                <div class="text-center">
+                                    <p class="font-bold text-white text-2xl">8 Weeks</p>
+                                    <p class="text-kinetic-100 text-sm">To Elite Form</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Floating basketball elements -->
+        <div class="absolute top-20 left-4 w-12 h-12 opacity-10 animate-float" style="animation-delay: 0.5s;">
+            <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="15" stroke="currentColor" stroke-width="2"/><path d="M16 2 L16 30" stroke="currentColor" stroke-width="1"/><path d="M2 16 L30 16" stroke="currentColor" stroke-width="1"/></svg>
+        </div>
+        <div class="absolute bottom-20 right-4 w-8 h-8 opacity-10 animate-float" style="animation-delay: 1s;">
+            <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="15" stroke="currentColor" stroke-width="2"/><path d="M16 2 L16 30" stroke="currentColor" stroke-width="1"/><path d="M2 16 L30 16" stroke="currentColor" stroke-width="1"/></svg>
+        </div>
+    </section>
+
+    <!-- Social Proof Bar -->
+    <section class="py-12 bg-white border-y border-court-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <p class="font-display text-4xl font-bold text-court-600">2,847+</p>
+                    <p class="text-gray-600 text-sm mt-1">Players Trained</p>
+                </div>
+                <div>
+                    <p class="font-display text-4xl font-bold text-court-600">47%</p>
+                    <p class="text-gray-600 text-sm mt-1">Avg 3PT Increase</p>
+                </div>
+                <div>
+                    <p class="font-display text-4xl font-bold text-court-600">8 Weeks</p>
+                    <p class="text-gray-600 text-sm mt-1">To Mastery</p>
+                </div>
+                <div>
+                    <p class="font-display text-4xl font-bold text-court-600">94%</p>
+                    <p class="text-gray-600 text-sm mt-1">Satisfaction Rate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Method Section -->
+    <section id="method" class="py-24 px-4 sm:px-6 lg:px-8 bg-court-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-court-500 font-semibold text-sm tracking-wider uppercase">The Clarence Method™</span>
+                <h2 class="font-display text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-4">Why Your Shot Feels Hard (And How to Fix It)</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Most coaches teach you to muscle the ball. Clarence teaches you to <strong>move the ball</strong> — using kinetic chains, not brute force.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="feature-card bg-white rounded-2xl p-8 border border-court-200 hover:border-court-300">
+                    <div class="w-14 h-14 bg-court-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-court-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-gray-900 mb-3">1. Kinetic Chain Sequencing</h3>
+                    <p class="text-gray-600">Learn the exact ground-up sequence: feet → hips → core → shoulder → elbow → wrist. No more "chicken wing" elbow or flat arc.</p>
+                </div>
+                <div class="feature-card bg-white rounded-2xl p-8 border border-court-200 hover:border-court-300">
+                    <div class="w-14 h-14 bg-court-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-court-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-gray-900 mb-3">2. The "Zero-Tension" Release</h3>
+                    <p class="text-gray-600">Eliminate shoulder and wrist tension that kills consistency. Clarence's signature "soft hands" drill creates a repeatable, effortless release every time.</p>
+                </div>
+                <div class="feature-card bg-white rounded-2xl p-8 border border-court-200 hover:border-court-300">
+                    <div class="w-14 h-14 bg-court-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-court-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-gray-900 mb-3">3. Dynamic Balance & Rhythm</h3>
+                    <p class="text-gray-600">Master the "1-2 step" and hop techniques for catch-and-shoot and off-the-dribble threes. Balance = consistency under pressure.</p>
+                </div>
+            </div>
+            <div class="mt-16 p-8 bg-gradient-to-r from-court-700 to-court-900 rounded-2xl text-center">
+                <h3 class="font-display text-2xl sm:text-3xl font-bold text-white mb-4">The Difference: Force vs. Flow</h3>
+                <p class="text-court-200 mb-6 max-w-2xl mx-auto">Traditional coaching: "Follow through!" "Elbow in!" "Use your legs!" — vague cues that create tension.<br class="hidden sm:block"> Clarence's Method: <strong class="text-white">Specific biomechanical checkpoints</strong> you can feel and verify on every rep.</p>
+                <a href="#order" class="inline-block bg-white text-court-900 px-8 py-3 rounded-xl font-bold text-lg hover:bg-court-100 transition-colors">Start Moving Like Clarence</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You Get Section -->
+    <section id="what-you-get" class="py-24 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-court-500 font-semibold text-sm tracking-wider uppercase">Complete System</span>
+                <h2 class="font-display text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-4">Everything You Need to Shoot Like a Pro</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">One purchase. Lifetime access. Works on any device.</p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-8 mb-16">
+                <div class="bg-court-50 rounded-2xl p-8 border border-court-200">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-16 h-16 bg-court-500 rounded-xl flex items-center justify-center">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 13v6a2 2 0 002 2"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 13v6a2 2 0 002 2"/></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-display text-xl font-bold text-gray-900">The Clarence Method™ PDF Guide</h3>
+                            <p class="text-gray-600 text-sm">87-page illustrated manual with biomechanics breakdown, drill progressions, and troubleshooting.</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-kinetic-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><strong>Phase 1:</strong> Foundation — Stance, grip, and the "Power Triangle"</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-kinetic-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><strong>Phase 2:</strong> Kinetic Chain — Ground force to fingertip control</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-kinetic-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><strong>Phase 3:</strong> Zero-Tension Release — The "soft hands" protocol</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-kinetic-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><strong>Phase 4:</strong> Game Speed — Catch & shoot, off-dribble, contested</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-kinetic-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><strong>Phase 5:</strong> Maintenance — 10-min daily routine for life</li>
+                    </ul>
+                </div>
+                <div class="bg-gradient-to-br from-court-700 to-court-900 rounded-2xl p-8 text-white relative overflow-hidden">
+                    <div class="absolute top-4 right-4 w-32 h-32 bg-court-500/20 rounded-full blur-2xl"></div>
+                    <div class="relative">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-16 h-16 bg-court-500/30 rounded-xl flex items-center justify-center border border-court-400/30">
+                                <svg class="w-8 h-8 text-court-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                            </div>
+                            <div>
+                                <h3 class="font-display text-xl font-bold">+ 47 HD Video Lessons</h3>
+                                <p class="text-court-300 text-sm">Filmed at Big Lesher with Clarence</p>
+                            </div>
+                        </div>
+                        <ul class="space-y-3 text-court-200">
+                            <li class="flex items-center gap-3"><svg class="w-5 h-5 text-kinetic-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Slow-motion breakdowns of Clarence's shot from 5 angles</li>
+                            <li class="flex items-center gap-3"><svg class="w-5 h-5 text-kinetic-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Common mistake vs. correct form side-by-side</li>
+                            <li class="flex items-center gap-3"><svg class="w-5 h-5 text-kinetic-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Drill library: 23 progressive drills with rep schemes</li>
+                            <li class="flex items-center gap-3"><svg class="w-5 h-5 text-kinetic-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip=rule="evenodd"/></svg>"Fix Your Shot" diagnostic tool — identify your leak in 60 sec</li>
+                            <li class="flex items-center gap-3"><svg class="w-5 h-5 text-kinetic-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Mobile-friendly: watch on the court, practice immediately</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white border-2 border-court-200 rounded-2xl p-6 text-center hover:border-court-400 transition-colors">
+                    <div class="w-14 h-14 mx-auto mb-4 bg-kinetic-100 rounded-xl flex items-center justify-center">
+                        <svg class="w-7 h-7 text-kinetic-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                    </div>
+                    <h4 class="font-display font-bold text-gray-900 mb-2">Lifetime Access</h4>
+                    <p class="text-gray-600 text-sm">Never pay again. All future updates, new drills, and bonus modules included free.</p>
+                </div>
+                <div class="bg-white border-2 border-court-200 rounded-2xl p-6 text-center hover:border-court-400 transition-colors">
+                    <div class="w-14 h-14 mx-auto mb-4 bg-court-100 rounded-xl flex items-center justify-center">
+                        <svg class="w-7 h-7 text-court-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h4 class="font-display font-bold text-gray-900 mb-2">60-Day Guarantee</h4>
+                    <p class="text-gray-600 text-sm">If your 3PT% doesn't improve in 8 weeks, get a full refund. No questions asked.</p>
+                </div>
+                <div class="bg-white border-2 border-court-200 rounded-2xl p-6 text-center hover:border-court-400 transition-colors">
+                    <div class="w-14 h-14 mx-auto mb-4 bg-court-100 rounded-xl flex items-center justify-center">
+                        <svg class="w-7 h-7 text-court-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+                    </div>
+                    <h4 class="font-display font-bold text-gray-900 mb-2">Private Community</h4>
+                    <p class="text-gray-600 text-sm">Access Clarence's Discord — form checks, Q&A, and accountability partners.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proof / Testimonials Section -->
+    <section id="proof" class="py-24 px-4 sm:px-6 lg:px-8 bg-court-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-court-500 font-semibold text-sm tracking-wider uppercase">Real Results</span>
+                <h2 class="font-display text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-4">Players Who Trust the Method</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">From rec league to D1 commits — the biomechanics don't change.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-8 border border-court-200 relative">
+                    <div class="flex items-center gap-1 mb-4">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    </div>
+                    <p class="text-gray-700 mb-6">"Went from 31% to 58% from three in one offseason. The kinetic chain concept changed everything — I finally understand WHY my shot works now."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-court-100 rounded-full flex items-center justify-center">
+                            <span class="font-bold text-court-600">JM</span>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900">J. Martinez</p>
+                            <p class="text-sm text-gray-500">D2 Guard • +27% 3PT</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl p-8 border border-court-200 relative">
+                    <div class="flex items-center gap-1 mb-4">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    </div>
+                    <p class="text-gray-700 mb-6">"Two herniated discs ended my playing days. Clarence's method let me shoot pain-free for the first time in years. Now I coach my son with it."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-court-100 rounded-full flex items-center justify-center">
+                            <span class="font-bold text-court-600">RT</span>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900">R. Thompson</p>
+                            <p class="text-sm text-gray-500">Former D1 / Youth Coach</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl p-8 border border-court-200 relative">
+                    <div class="flex items-center gap-1 mb-4">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    </div>
+                    <p class="text-gray-700 mb-6">"The 'Fix Your Shot' tool spotted my chicken wing in 30 seconds. Three drills later, my elbow stays tucked. Simple, measurable, works."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-court-100 rounded-full flex items-center justify-center">
+                            <span class="font-bold text-court-600">AK</span>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900">A. Kim</p>
+                            <p class="text-sm text-gray-500">High School Senior • 41% → 67%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-court-500 font-semibold text-sm tracking-wider uppercase">Questions?</span>
+                <h2 class="font-display text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-4">Everything You Need to Know</h2>
+            </div>
+            <div class="space-y-4" id="faq-accordion">
+                <details class="group bg-court-50 rounded-xl border border-court-200 overflow-hidden">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                        <h3 class="font-display font-semibold text-gray-900 pr-8">Is this just for elite players? I'm a rec league guy.</h3>
+                        <svg class="w-5 h-5 text-court-500 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-600 border-t border-court-200">
+                        <p>Absolutely not. The biomechanics are the same whether you're shooting in the NBA or at the YMCA. Clarence designed the progressions so anyone can start at their level. Phase 1 builds the foundation from scratch — no athletic background required.</p>
+                    </div>
+                </details>
+                <details class="group bg-court-50 rounded-xl border border-court-200 overflow-hidden">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                        <h3 class="font-display font-semibold text-gray-900 pr-8">What if I have shoulder/elbow issues?</h3>
+                        <svg class="w-5 h-5 text-court-500 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-600 border-t border-court-200">
+                        <p>This is exactly who the method was built for. The "Zero-Tension Release" eliminates the compressive forces that cause shooting pain. Many users (like R. Thompson above) returned to pain-free shooting after years of injury. Always consult your physio, but the mechanics are designed to protect joints.</p>
+                    </div>
+                </details>
+                <details class="group bg-court-50 rounded-xl border border-court-200 overflow-hidden">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                        <h3 class="font-display font-semibold text-gray-900 pr-8">How fast will I see results?</h3>
+                        <svg class="w-5 h-5 text-court-500 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-600 border-t border-court-200">
+                        <p>Most players feel the "click" in Phase 2 (weeks 2-3) when the kinetic chain connects. Measurable 3PT% improvement typically shows in weeks 4-6. The 8-week timeline is conservative — some see 15-20% jumps in 4 weeks. Consistency with the 10-min daily routine is the variable.</p>
+                    </div>
+                </details>
+                <details class="group bg-court-50 rounded-xl border border-court-200 overflow-hidden">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                        <h3 class="font-display font-semibold text-gray-900 pr-8">Do I need special equipment or a gym?</h3>
+                        <svg class="w-5 h-5 text-court-500 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-600 border-t border-court-200">
+                        <p>Just a ball and a hoop. The Phase 1-2 drills can be done without a basket (form work, shadow shooting). Phase 3+ needs a rim. No bands, weights, or machines required — your body IS the equipment when the sequence is right.</p>
+                    </div>
+                </details>
+                <details class="group bg-court-50 rounded-xl border border-court-200 overflow-hidden">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                        <h3 class="font-display font-semibold text-gray-900 pr-8">What's the difference between the PDF and videos?</h3>
+                        <svg class="w-5 h-5 text-court-500 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-600 border-t border-court-200">
+                        <p>The PDF is the complete reference manual — every concept, drill, progression, and troubleshooting guide in writing with diagrams. The videos show Clarence demonstrating each drill at game speed and in slow-mo from multiple angles. You get both. Use the PDF for study, videos for on-court reference.</p>
+                    </div>
+                </details>
+                <details class="group bg-court-50 rounded-xl border border-court-200 overflow-hidden">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                        <h3 class="font-display font-semibold text-gray-900 pr-8">Is there a recurring fee?</h3>
+                        <svg class="w-5 h-5 text-court-500 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-600 border-t border-court-200">
+                        <p>No. One payment ($47) = lifetime access. All future updates, new drill modules, and community access included. No subscriptions, no upsells, no hidden fees.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-court-900 to-court-950 relative overflow-hidden">
+        <div class="absolute inset-0 court-pattern opacity-20"></div>
+        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-court-500 to-transparent"></div>
+        <div class="max-w-7xl mx-auto relative">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <span class="text-kinetic-400 font-semibold text-sm tracking-wider uppercase">Ready to Shoot Like Clarence?</span>
+                    <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mt-2 mb-6">Get the Complete System Today</h2>
+                    <p class="text-court-300 text-lg mb-8 max-w-xl">One payment. Lifetime access. 60-day guarantee. Join 2,847+ players who fixed their shot for good.</p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-10">
+                        <a href="#" class="btn-primary text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-200 hover:scale-105 shadow-lg shadow-court-500/30 animate-pulse-glow w-full sm:w-auto" id="buy-btn">
+                            <span class="flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/></svg>
+                                Get Instant Access — $47
+                            </span>
+                        </a>
+                    </div>
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-6 text-court-400 text-sm">
+                        <div class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-kinetic-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                            <span>Instant PDF Download</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-kinetic-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                            <span>47 HD Videos</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-kinetic-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                            <span>Private Community</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
+                    <div class="bg-white/10 rounded-xl p-6 mb-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="font-semibold text-white">The Clarence Method™ Complete System</span>
+                            <span class="font-display text-2xl font-bold text-kinetic-400">$47</span>
+                        </div>
+                        <div class="space-y-2 text-sm text-court-300">
+                            <div class="flex justify-between"><span>PDF Guide (87 pages)</span><span class="text-white">Included</span></div>
+                            <div class="flex justify-between"><span>47 HD Video Lessons</span><span class="text-white">Included</span></div>
+                            <div class="flex justify-between"><span>"Fix Your Shot" Diagnostic Tool</span><span class="text-white">Included</span></div>
+                            <div class="flex justify-between"><span>Private Discord Community</span><span class="text-white">Included</span></div>
+                            <div class="flex justify-between"><span>Lifetime Updates</span><span class="text-white">Included</span></div>
+                            <div class="flex justify-between"><span>60-Day Money-Back Guarantee</span><span class="text-white">Included</span></div>
+                        </div>
+                    </div>
+                    <button class="btn-primary w-full py-4 rounded-xl font-bold text-lg transition-all duration-200 hover:scale-[1.02] shadow-lg shadow-court-500/30 animate-pulse-glow" id="buy-btn-bottom">
+                        <span class="flex items-center justify-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/></svg>
+                            Secure Checkout — $47
+                        </span>
+                    </button>
+                    <p class="text-center text-court-500 text-sm mt-4">
+                        <svg class="w-4 h-4 inline mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                        Secure checkout via Stripe • Instant access after purchase • No subscription
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-court-950 border-t border-court-800 py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="md:col-span-2">
+                    <a href="#" class="font-display font-bold text-xl text-white flex items-center gap-2 mb-4">
+                        <svg class="w-8 h-8 text-court-500" viewBox="0 0 32 32" fill="none">
+                            <circle cx="16" cy="16" r="15" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 2 L16 30" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M2 16 L30 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            <ellipse cx="16" cy="16" rx="8" ry="5" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                        <span>Kinetic Basketball</span>
+                    </a>
+                    <p class="text-court-400 max-w-sm">The biomechanics-based shooting system for effortless, accurate, injury-proof three-point shooting. Built by Clarence at Big Lesher.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Product</h4>
+                    <ul class="space-y-2 text-court-400 text-sm">
+                        <li><a href="#what-you-get" class="hover:text-kinetic-400 transition-colors">The System</a></li>
+                        <li><a href="#method" class="hover:text-kinetic-400 transition-colors">The Method</a></li>
+                        <li><a href="#proof" class="hover:text-kinetic-400 transition-colors">Results</a></li>
+                        <li><a href="#faq" class="hover:text-kinetic-400 transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Support</h4>
+                    <ul class="space-y-2 text-court-400 text-sm">
+                        <li><a href="#" class="hover:text-kinetic-400 transition-colors">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-kinetic-400 transition-colors">Refund Policy</a></li>
+                        <li><a href="#" class="hover:text-kinetic-400 transition-colors">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-kinetic-400 transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-court-800 flex flex-col md:flex-row items-center justify-between gap-4">
+                <p class="text-court-500 text-sm">© 2025 Kinetic Basketball. All rights reserved.</p>
+                <div class="flex items-center gap-6">
+                    <a href="#" class="text-court-500 hover:text-kinetic-400 transition-colors" aria-label="YouTube">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 7.657 0 12 0 12s0 4.343.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 16.343 24 12 24 12s0-4.343-.502-5.814z"/><path fill="white" d="M9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    </a>
+                    <a href="#" class="text-court-500 hover:text-kinetic-400 transition-colors" aria-label="Instagram">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    </a>
+                    <a href="#" class="text-court-500 hover:text-kinetic-400 transition-colors" aria-label="Twitter">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.695L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Intersection Observer for scroll animations
+        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.feature-card, .grid > div, section > div > div').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Buy button click tracking (demo)
+        document.querySelectorAll('#buy-btn, #buy-btn-bottom').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                alert('Demo: This would redirect to Stripe checkout. In production, integrate your payment processor here.');
+            });
+        });
+
+        // Add floating basketball animation to hero
+        const hero = document.querySelector('.hero-gradient');
+        for (let i = 0; i < 5; i++) {
+            const ball = document.createElement('div');
+            ball.className = 'absolute w-6 h-6 opacity-5 animate-float pointer-events-none';
+            ball.style.left = Math.random() * 90 + '%';
+            ball.style.top = Math.random() * 90 + '%';
+            ball.style.animationDelay = Math.random() * 3 + 's';
+            ball.style.animationDuration = (3 + Math.random() * 2) + 's';
+            ball.innerHTML = '<svg viewBox="0 0 32 32" fill="none" class="w-full h-full text-white"><circle cx="16" cy="16" r="15" stroke="currentColor" stroke-width="1.5"/><path d="M16 2 L16 30" stroke="currentColor" stroke-width="0.75"/><path d="M2 16 L30 16" stroke="currentColor" stroke-width="0.75"/></svg>';
+            hero.appendChild(ball);
+        }
+    </script>
+</body>
+</html>
